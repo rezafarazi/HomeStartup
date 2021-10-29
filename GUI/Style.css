@@ -1,0 +1,458 @@
+@font-face
+{
+    font-family: 'B-koodak';
+    src: url("font/bk.ttf");
+}
+
+
+@font-face
+{
+    font-family: 'Vazir';
+    src: url("font/Vazir.ttf");
+}
+
+
+*
+{
+    font-family: 'Vazir';
+    outline: none !important;
+}
+
+
+*::selection
+{
+    background: transparent;
+}
+
+
+*::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+*::-moz-viewport-scroll
+{
+    display: none;
+}
+
+
+.Top-Menu
+{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 99;
+}
+
+
+.Left-Log-In-Btn
+{
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    background: #039BE5;
+    border-radius: 20px;
+    color: #FFF !important;
+    margin: 25px;
+    float: left;
+    opacity: 0.9;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    outline: none;
+}
+
+
+.Right-Log-In-Btn
+{
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    background: #7CB342;
+    border-radius: 20px;
+    color: #FFF !important;
+    margin: 25px;
+    float: right;
+    opacity: 0.9;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    outline: none;
+}
+
+
+.Main-Header
+{
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(to Right,#7CB342,#039BE5);*/
+    /*background: url("https://p4.wallpaperbetter.com/wallpaper/610/997/136/iran-azadi-tower-tehran-architecture-wallpaper-9910482db1ea8d1bd6f748cfe0e166ed.jpg");*/
+    background: url("https://www.elsetge.cat/myimg/f/9-92171_dubai-wallpapers-hd-for-desktop-dubai-wallpapers-hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+
+.Main-Header>div
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.Welcome-Message-Header
+{
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 24px;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: absolute;
+    top: 27%;
+}
+
+
+.input-div
+{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+
+
+.Search-Box
+{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.Search-Btn
+{
+    padding: 10px 25px 10px 25px;
+    /*padding: 10px 25px 10px 25px;*/
+    background: #d50000;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    opacity: 0.9;
+    text-shadow:0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.Search-Box::selection
+{
+    background: #7CB342;
+    color: #FFF;
+}
+
+
+.Right-Log-In-Btn:hover,.Left-Log-In-Btn:hover,.Search-Btn:hover
+{
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    opacity: 1;
+}
+
+
+.Classic-Header
+{
+    width: 100%;
+    height: 45px;
+    background: #FFF;
+}
+
+
+.Classic-Header>center>img
+{
+    height: 100%;
+    padding: 5px;
+}
+
+
+.Box-Showdow
+{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.Text-Showdow
+{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.Sign-in-Content-Img
+{
+    height: 830px;
+    /*background: url("https://gravity.ir/wp-content/uploads/2014/02/Azadi-Tower-Tehran.jpg");*/
+    background:#7CB342;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Sign-in-Content-Img-Law
+{
+    margin: 35px 50px 20px 0px;
+    overflow: hidden;
+}
+
+
+.Sign-in-Content-Img-Law>h1
+{
+    direction: rtl;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+
+
+.Sign-in-Content-Img-Law>p
+{
+    direction: rtl;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+.Sign-in-Content-Img-Law-Done
+{
+    top: 95%;
+    direction: rtl;
+}
+
+
+
+#I-DONE-Web-Site-Laws
+{
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+
+#I-DONE-Web-Site-Laws-Lable
+{
+    color: #FFF;
+}
+
+
+
+.input-text-half
+{
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+.input-text-half>input,.input-text-full>input,.input-text-full>select,.input-text-half>select,.input-text-half>textarea,.input-text-full>textarea
+{
+    outline: none;
+    border: 1px solid #CCC;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+.input-text-full
+{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+.input-text-half>input::selection,.input-text-full>input::selection
+{
+    background: #7CB342;
+    color: #FFF;
+}
+
+
+
+#Submit-Btn
+{
+    background: #7CB342;
+    color: #FFFFFF;
+    height: 50px;
+    border-radius: 5px !important;
+}
+
+
+
+.Sing-Up-Sms-Form-Content
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #7CB342;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#SMS_CODE_TEXT_INPUT_BORDER
+{
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    padding: 10px;
+    display: none;
+}
+
+
+
+#SMS_CODE_TEXT_INPUT_BORDER>center>h1
+{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+
+#SMS_CODE_TEXT_INPUT
+{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #CCC;
+    padding: 5px 8px 5px 8px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+
+#SMS_CODE_TEXT_INPUT::selection
+{
+    background: #7CB342;
+    color: #FFFFFF;
+}
+
+
+
+#Submit-Sms
+{
+    width: 30%;
+    height: 50px;
+    background: #d50000;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+
+#SMS_Active_BORDER
+{
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    padding: 10px;
+    display: none;
+}
+
+
+
+#SMS_Active_BORDER>center>h1
+{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+
+#Error_BORDER
+{
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    padding: 10px;
+    display: none;
+}
+
+
+
+#Error_BORDER>center>h1
+{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+
+.Login-Border
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.Login-Border-Indide
+{
+    position: absolute;
+    top: 27%;
+    left: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**********Mobile View Start*********/
+@media screen and (max-width: 755px)
+{
+
+    .Welcome-Message-Header
+    {
+        font-size: 16px;
+        top: 35%;
+    }
+
+
+    .Search-Box
+    {
+        width: 90%;
+        font-size: 14px;
+    }
+
+
+    .input-div
+    {
+        top: 45%;
+    }
+
+
+    .Search-Btn
+    {
+        font-size: 14px;
+    }
+
+
+}
+/**********Mobile View End*********/

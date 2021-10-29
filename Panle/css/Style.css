@@ -1,0 +1,569 @@
+@font-face
+{
+    font-family: Vazir;
+    src: url("../Font/Vazir.ttf");
+}
+
+
+@font-face
+{
+    font-family: B-koodak;
+    src: url("../Font/bk.ttf");
+}
+
+
+*
+{
+    list-style: none;
+    text-decoration: none;
+    font-family: Vazir;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body
+{
+    margin: 5px;
+}
+
+
+
+*::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+
+*::-moz-scrolled-content
+{
+    display: none;
+}
+
+
+
+*::selection
+{
+    background: transparent;
+    outline: none;
+}
+
+
+
+.Panle-All
+{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    direction: rtl;
+}
+
+
+.Title_Border
+{
+    font-size: 18px;
+    border-bottom: 1px solid #7CB342;
+    width: 150px;
+    padding-bottom: 15px;
+}
+
+
+
+
+/********************Menu Start****************/
+.Panle-Menu
+{
+    width: 50px;
+    height: 98.5%;
+    background: #7CB342;
+    overflow: hidden;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 999;
+}
+
+
+.Panle-Menu>ul
+{
+    width: 100%;
+}
+
+
+.material-icons
+{
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+
+.material-icons:hover
+{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.15);
+}
+
+
+@media screen and (max-width: 720px)
+{
+
+
+    .Panle-All
+    {
+        position: relative;
+    }
+
+
+
+    .Panle-Menu
+    {
+        width: 100%;
+        height: 50px;
+        top: 92%;
+        position: absolute;
+    }
+
+
+    .Panle-Menu>ul
+    {
+        width: 100%;
+        display: flex;
+    }
+
+
+    .Panle-Menu>ul>li
+    {
+        width: 25%;
+    }
+
+
+    .material-icons
+    {
+        color: #FFFFFF;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+}
+/********************Menu End****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************Panle Start****************/
+
+.Panle-Contents
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+#Panle-Search
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+
+#Panle-Search>form
+{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+
+#Panle-Search>form>center>input
+{
+    width: 650px;
+    font-size: 16px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border: 1px solid #CCC;
+}
+
+
+#Panle-Search-Submit-Button
+{
+    width: 180px !important;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #7CB342;
+}
+
+
+.Panle-Search-Icon
+{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+
+#Panle-Add-New-Manager
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+
+#Add-Manager-Content
+{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+
+#Add-Manager-Content>center>input
+{
+    width: 650px;
+    font-size: 16px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border: 1px solid #CCC;
+}
+
+
+.Panle-Add-New-Manager-Icon
+{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+
+#Panle-Search>form>center>input::selection,#Add-Manager-Content>center>input::selection
+{
+    background: #7CB342;
+    color: #FFFFFF;
+}
+
+
+#Is-Empty
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media screen and (max-width: 720px)
+{
+    #Panle-Search>form>center>input
+    {
+        width: 95% !important;
+    }
+
+    #Add-Manager-Content>center>input
+    {
+        width: 95% !important;
+    }
+
+    .Panle-Search-Icon
+    {
+        top: 30%;
+    }
+
+    .Panle-Add-New-Manager-Icon
+    {
+        top: 30%;
+    }
+
+    #Panle-Active-New-User
+    {
+        width: 100%;
+        margin-right: 8.5px !important;
+    }
+
+    #Panle-Active-New-User>center
+    {
+        margin-bottom: 60px !important;
+    }
+
+    #Main-Add-New-Home-Content,#Main-Edit-Home-Content,#Main-Profile-Content,#Main-History-Content
+    {
+        width: 100% !important;
+    }
+
+    #Is-Empty
+    {
+
+    }
+
+}
+
+
+#Panle-Active-New-User
+{
+    width: 95%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: scroll;
+    margin-right: 50px;
+    display: none;
+}
+
+
+.Disable-Users-Content
+{
+    width: 98%;
+    height: 150px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    float: left;
+    display: table;
+    cursor: pointer;
+}
+
+
+.Disable-Users-Content>div
+{
+    width: 1%;
+    margin: 5px 10px 5px 10px;
+    display: table-cell;
+}
+
+
+.Disable-Users-Content>div>p
+{
+    margin: 8px;
+    color: #2f2f2f;
+}
+
+
+#Panle-Add-New-Home
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    direction: ltr;
+    display: none;
+}
+
+
+#Main-Add-New-Home-Content
+{
+    width: calc(100% - 55px);
+    height: 100%;
+}
+
+
+#Main-Add-New-Home-Content>iframe
+{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+#Panle-Edit-Home
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    direction: ltr;
+    display: none;
+}
+
+
+#Main-Edit-Home-Content
+{
+    width: calc(100% - 55px);
+    height: 100%;
+}
+
+
+#Main-Edit-Home-Content>iframe
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+
+#Panle-Profile
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    direction: ltr;
+}
+
+
+#Main-Profile-Content
+{
+    width: calc(100% - 55px);
+    height: 100%;
+}
+
+
+#Main-Profile-Content>iframe
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+
+#Panle-History
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    direction: ltr;
+    display: none;
+}
+
+
+#Main-History-Content
+{
+    width: calc(100% - 55px);
+    height: 100%;
+}
+
+
+#Main-History-Content>iframe
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+/******************Panle End****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************Dialogs Start***************/
+#Dialogs
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+
+#Diable-User-Dialog-Content
+{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+
+
+#Diable-User-Dialog
+{
+    width: 75%;
+    height: 500px;
+    background: #FFF;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+#Close-Diable-User-Dialog
+{
+    position: absolute;
+    top: 92%;
+    left: 28px;
+    color: #2f2f2f;
+    cursor: pointer;
+}
+
+
+#Diable-User-Dialog-Context
+{
+    width: 100%;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#Diable-User-Dialog-Context-Inside
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#Diable-User-Dialog-Context-Inside::-webkit-scrollbar
+{
+    display: none;
+}
+/******************Dialogs End*****************/
+
+
+
+
+
+
+
+
+
+
+
+
+

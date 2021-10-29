@@ -1,0 +1,8 @@
+SELECT DISTINCT Home.Id AS Home_ID,Home.Title AS Home_Title,Home.Phone AS Home_Phone,Home.Tax_Code AS Home_Tax_Code,Home.Meters AS Home_Meters,Home.Price_Money AS Home_Price_Money,Home.Image AS Home_Image,Home.Area AS Home_Area,Home.City AS Home_City,Home.Parking AS Home_Parking,Home.Anbar AS Home_Anbar,Home.Document_Image AS Home_Document,Home.Address AS Home_Address,User.Name AS User_Name,User.Family AS User_Family,User.Phone AS User_Phone,User.Job AS User_Job,User.City AS User_City,Home_Types.Name AS Home_Type FROM Home Inner Join History ON Home.id=History.Home_Id Inner Join User ON History.User_Id=User.Id INNER Join Home_Types ON Home.Type_Id=Home_Types.Id
+
+
+
+
+
+
+UPDATE User SET Enabled=0,Name='',Family='',Phone='',User_Image='',Birth_Day='',Area='',City='',Job='',Address='',National_Id='',National_Card='',User_Type=1,Done_User_Id=1,Date='' WHERE User.Id=1
